@@ -2,21 +2,21 @@ package BLIND75;
 
 import java.util.Scanner;
 
-class Solution {
-    public void rotate(int[] arr, int k) {
+public class Rotatearray {
+    public static void rotate(int[] arr, int k) {
         k = k % arr.length;
         reverse(arr, 0, arr.length - 1);
         reverse(arr, 0, k - 1);
         reverse(arr, k, arr.length - 1);
     }
 
-    private void reverse(int[] arr, int l, int r) {
+    private static void reverse(int[] arr, int l, int r) {
         while (l < r) {
             swap(arr, l++, r--);
         }
     }
 
-    private void swap(int[] arr, int l, int r) {
+    private static void swap(int[] arr, int l, int r) {
         int temp = arr[l];
         arr[l] = arr[r];
         arr[r] = temp;
@@ -29,10 +29,10 @@ class Solution {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println("Enter K: ");
+        System.out.println("Enter K: ");  // This should be before taking the input for k
         int k = sc.nextInt();
 
-        Solution obj = new Solution();
+        Rotatearray obj = new Rotatearray();  // Corrected class name
         obj.rotate(arr, k);
         for (int nums : arr) {
             System.out.print(nums + " ");
