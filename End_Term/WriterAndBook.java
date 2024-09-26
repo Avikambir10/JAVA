@@ -1,4 +1,4 @@
-package St_2;
+package End_Term;
 //Design a class called Writer, which is designed to model a book's writer. It contains:
 //
 //Three private instance variables: name(String), email(String), and gender(char of either 'm' or 'f');

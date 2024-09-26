@@ -1,4 +1,4 @@
-package St_2;
+package End_Term;
 //Find occurrences of palindrome words in a string
 //Write a function which given a string, count and return the palindrome words present in the string. A word in a string is separated with space(s).
 //
